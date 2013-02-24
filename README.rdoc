@@ -1,1 +1,1 @@
-This is my sample app
+Sample app I'm doing with One Month Rails.
