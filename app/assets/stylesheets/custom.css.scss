@@ -5,10 +5,12 @@
 
 html {
 	overflow-y: scroll;
+	height: 100%;
 }
 
 body {
-	padding-top: 60px;
+	height: 100%;
+	background-image: url(ecailles.png) 
 }
 
 section {
@@ -17,6 +19,39 @@ section {
 
 textarea {
 	resize: vertical;
+}
+
+#drop_right {
+	min-width: 108px;
+}
+
+#new_pin {
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+#hero {
+	padding-bottom: 15px;
+}
+
+#wrap > .container {
+	padding-top: 60px;
+}
+
+#footer {
+	height: 89px;
+	text-align: center;
+	border-top: 1px solid #d4d4d4;
+	background-color: #f9f9f9;
+}
+
+.form-actions {
+	border-radius: 6px;
+	padding-left: 182px;
+}
+
+.muted {
+	margin-top: 15px;
 }
 
 .center {
@@ -31,6 +66,26 @@ textarea {
 	body {
 		padding-top: 0;
 	}
+}
+
+@media (max-width: 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: -20px;
+		padding-right: -20px;
+	}
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -90px;
+}
+
+#push {
+	height: 90px;
 }
 
 /* typography */
