@@ -13,6 +13,7 @@
 				</ul>
 				<ul class="nav pull-right">
 					<% if user_signed_in? %>
+					<li><%= link_to "Add +", new_pin_path %></li>
 					<div class="btn-group">
 						<button class="btn dropdown-toggle" data-toggle="dropdown">
 							<%= current_user.username %>
