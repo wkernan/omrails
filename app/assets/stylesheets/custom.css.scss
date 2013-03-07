@@ -45,6 +45,16 @@ textarea {
 	background-color: #f9f9f9;
 }
 
+.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
+	border-top-color: black;
+	border-bottom-color: black;
+}
+
+.nav .dropdown-toggle .caret{
+	border-top-color: black;
+	border-bottom-color: black;
+}
+
 .form-actions {
 	border-radius: 6px;
 	padding-left: 182px;

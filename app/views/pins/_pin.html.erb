@@ -10,8 +10,8 @@
 	</p>
 	<% if current_user == pin.user %>
 		<p>
-			<%= link_to 'Edit', edit_pin_path(pin) %>
-			<%= link_to 'Destroy', pin, confirm: 'Are you sure?', method: :delete %>
+			<%= link_to '<i class="icon-pencil"></i> Edit'.html_safe, edit_pin_path(pin) %>
+			<%= link_to '<i class="icon-remove"></i> Destroy'.html_safe, pin, confirm: 'Are you sure?', method: :delete %>
 		</p>
 	<% end %>
 </div>
