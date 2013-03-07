@@ -1,17 +1,19 @@
 <div class="box">
 	<%= link_to (image_tag pin.image(:medium)), pin %>
-	<p class="description">
+	<h3 class="description">
 		<%= pin.description %>
-	</p>
+	</h3>
 	<p>
-		<strong>
-			Posted by <%= pin.user.username %>
-		</strong>
+		<span class="label label-success">
+			<strong>
+				Posted by <i class="icon-user"></i> <%= pin.user.username %>
+			</strong>
+		</span>
 	</p>
 	<% if current_user == pin.user %>
 		<p>
-			<%= link_to '<i class="icon-pencil"></i> Edit'.html_safe, edit_pin_path(pin) %>
-			<%= link_to '<i class="icon-remove"></i> Destroy'.html_safe, pin, confirm: 'Are you sure?', method: :delete %>
+			<%= link_to '<span class="label label-info"><i class="icon-pencil"></i> Edit</span>'.html_safe, edit_pin_path(pin) %>
+			<%= link_to '<span class="label label-important"><i class="icon-remove"></i> Destroy</span>'.html_safe, pin, confirm: 'Are you sure?', method: :delete %>
 		</p>
 	<% end %>
 </div>
