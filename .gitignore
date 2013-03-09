@@ -19,7 +19,10 @@ doc/
 .project
 .DS_Store
 .idea
-/config/environments
+
 
 # Ignore Paperclip uploaded files
 /public/system
+
+# Ignore S3 Keys
+/config/environments
