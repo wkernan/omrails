@@ -64,15 +64,4 @@ Omrails::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
-
-  # Amazon S3 settings for Paperclip uploads
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_protocol => 'http',
-    :s3_credentials => {
-      :bucket => ENV['bill_pics'],
-      :access_key_id => ENV['AKIAJECS3ZK4DJNH26IA'],
-      :secret_access_key => ENV['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']
-    }
-  }
 end
