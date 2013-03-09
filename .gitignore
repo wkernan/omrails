@@ -19,6 +19,7 @@ doc/
 .project
 .DS_Store
 .idea
+/config/environments/production.rb
 
 # Ignore Paperclip uploaded files
 /public/system
