@@ -4,9 +4,12 @@
 		<%= pin.description %>
 	</h3>
 	<p>
-		<span class="label label-success">
+		<span class="label">
 			<strong>
-				Posted by <i class="icon-user"></i> <%= pin.user.username %>
+				Posted by <%= gravatar_for (pin.user.email), :size => 48 %> 
+			</strong>
+			<strong>
+				<%= pin.user.username %>
 			</strong>
 		</span>
 	</p>

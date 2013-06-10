@@ -15,9 +15,7 @@
 				<% if user_signed_in? %>
 				<li><%= link_to '<i class="icon-plus-sign"></i> Add Pin'.html_safe, new_pin_path %></li>
 				<div class="btn-group">
-					<a class="btn" href="#"><i class="icon-user"></i>
-						<%= current_user.username %>
-					</a>
+						<%= gravatar_for (current_user.email), :size => 30 %>
 					<a class="btn dropdown-toggle" data-toggle="dropdown">
 						<span class="caret"></span>
 					</a>
