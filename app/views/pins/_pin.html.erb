@@ -3,16 +3,16 @@
 	<h3 class="description">
 		<%= pin.description %>
 	</h3>
-	<p>
-		<span class="label">
+	<div class="center">
+		<p>
 			<strong>
 				Posted by <%= gravatar_for (pin.user.email), :size => 48 %> 
 			</strong>
 			<strong>
 				<%= pin.user.username %>
 			</strong>
-		</span>
-	</p>
+		</p>
+	</div>
 	<% if current_user == pin.user %>
 		<p>
 			<%= link_to '<button class="btn btn-small btn-info" type="button"><i class="icon-pencil"></i> Edit</button>'.html_safe, edit_pin_path(pin) %>

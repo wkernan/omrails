@@ -45,10 +45,6 @@ textarea {
 	background-color: #f9f9f9;
 }
 
-.description {
-
-}
-
 .icon-remove, .icon-pencil {
 	margin-right: 2px;
 }
@@ -82,6 +78,8 @@ textarea {
 
 .hero-unit {
 	background-color: #468847;
+	border: 2px solid #333333;
+	border-radius: 0px;
 }
 
 @media (max-width: 979px) {
@@ -169,6 +167,7 @@ p {
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #444;
 	width: 214px;
+	background-image: url(ticks.png)
 }
 
 .box img {
@@ -183,6 +182,7 @@ p {
 	padding-bottom: 2px;
 	margin: 10px 0 5px;
 	border-bottom: 2px solid #D4D4D4;
+	text-align: center;
 }
 
 .label {
@@ -192,4 +192,12 @@ p {
 	color: #333333;
 	text-shadow: none;
 }
-	
+
+.box .avatar {
+width: 48px;
+display: inline;
+}
+
+.box p {
+	display: inline;
+}	
