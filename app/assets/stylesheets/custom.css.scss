@@ -45,6 +45,10 @@ textarea {
 	background-color: #f9f9f9;
 }
 
+#buttons {
+	margin-top: 4px;
+}
+
 .icon-remove, .icon-pencil {
 	margin-right: 2px;
 }
@@ -152,10 +156,6 @@ p {
 #logo:hover {
 	color: #468847;
 	text-decoration: none;
-}
-
-#buttons {
-	margin-top: 4px;
 }
 
 /* Required for JQuery Masonry */

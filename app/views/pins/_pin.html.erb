@@ -12,11 +12,13 @@
 				<%= pin.user.username %>
 			</strong>
 		</p>
-		<% if current_user == pin.user %>
-		<p>
-			<%= link_to '<button class="btn btn-small btn-info" type="button" id="buttons"><i class="icon-pencil"></i> Edit</button>'.html_safe, edit_pin_path(pin) %>
-			<%= link_to '<button class="btn btn-small btn-danger" id="buttons"><i class="icon-remove"></i> Destroy</button>'.html_safe, pin, confirm: 'Are you sure?', method: :delete %>
-		</p>
 	</div>
+		<% if current_user == pin.user %> 
+		<div class="center">
+			<p>
+				<%= link_to '<button class="btn btn-small btn-info" type="button" id="buttons"><i class="icon-pencil"></i> Edit</button>'.html_safe, edit_pin_path(pin) %>
+				<%= link_to '<button class="btn btn-small btn-danger" id="buttons"><i class="icon-remove"></i> Destroy</button>'.html_safe, pin, confirm: 'Are you sure?', method: :delete %>
+			</p>
+		</div>
 	<% end %>
 </div>
